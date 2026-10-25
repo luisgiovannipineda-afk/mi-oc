@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Absolute Evil Devil</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter para un look minimalista y legible -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Configuración de Tailwind y Estilos Personalizados -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            500: '#64748b',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth scrolling para los enlaces de navegación */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Ocultar barra de desplazamiento en contenedores horizontales si es necesario */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-brand-50 text-brand-900 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-md border-b border-brand-100">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-lg tracking-tight">The Absolute Evil Devil</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-brand-500">
+                <a href="#personajes" class="hover:text-brand-900 transition-colors">Personajes</a>
+                <a href="#historia" class="hover:text-brand-900 transition-colors">Historia y Capítulos</a>
+            </div>
+            <!-- Botón Menú Móvil (Visual) -->
+            <button class="md:hidden text-brand-500 hover:text-brand-900">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Cabecera / Título Principal -->
+    <header class="pt-32 pb-20 px-6 text-center max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">The Absolute Evil Devil</h1>
+        <p class="text-lg md:text-xl text-brand-500 font-light leading-relaxed">
+            En desarrollo...
+        </p>
+    </header>
+
+    <!-- Sección: Personajes (Apariencia y Personalidad) -->
+    <section id="personajes" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16 text-center">
+                <h2 class="text-3xl font-bold mb-4">Personajes</h2>
+                <p class="text-brand-500 max-w-2xl mx-auto">Conoce a los protagonistas de esta historia. Sus detalles, apariencias físicas y su forma de ser.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                
+                <!-- Personaje 1 -->
+                <article class="flex flex-col md:flex-row gap-8 bg-brand-50 rounded-2xl p-6 md:p-8 border border-brand-100 transition-shadow hover:shadow-lg">
+                    <!-- Imagen Ilustrativa -->
+                    <div class="w-full md:w-2/5 flex-shrink-0">
+                        <img src="https://placehold.co/400x500/e2e8f0/64748b?text=Imagen+Personaje" alt="Personaje 1" class="w-full h-auto object-cover rounded-xl shadow-sm aspect-[4/5]">
+                    </div>
+                    <!-- Contenido (Apariencia y Personalidad) -->
+                    <div class="w-full md:w-3/5 flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold mb-1">Zackary Durden</h3>
+                        <p class="text-sm text-brand-500 uppercase tracking-wide mb-6">Protagonista</p>
+                        
+                        <!-- Apartado: Apariencia -->
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-brand-900 border-b border-brand-100 pb-2 mb-3">Apariencia Física</h4>
+                            <p class="text-brand-500 text-sm leading-relaxed">
+                                [Describe aquí su apariencia]. Es un joven de estatura media, complexión delgada pero atlética. Tiene el cabello oscuro, ligeramente despeinado, y unos ojos de color avellana muy expresivos. Suele vestir de manera informal, prefiriendo chaquetas oscuras y colores neutros.
+                            </p>
+                        </div>
+                        
+                        <!-- Apartado: Personalidad -->
+                        <div>
+                            <h4 class="font-semibold text-brand-900 border-b border-brand-100 pb-2 mb-3">Personalidad</h4>
+                            <p class="text-brand-500 text-sm leading-relaxed">
+                                [Describe aquí su personalidad]. A simple vista parece distante y reservado, pero en el fondo es sumamente leal con sus amigos. Tiende a pensar demasiado las cosas (sobrepensar) y su mayor miedo es el fracaso. Tiene un sentido del humor sarcástico que usa como mecanismo de defensa.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Personaje 2 -->
+                <article class="flex flex-col md:flex-row gap-8 bg-brand-50 rounded-2xl p-6 md:p-8 border border-brand-100 transition-shadow hover:shadow-lg">
+                    <div class="w-full md:w-2/5 flex-shrink-0">
+                        <img src="https://placehold.co/400x500/e2e8f0/64748b?text=Imagen+Personaje" alt="Personaje 2" class="w-full h-auto object-cover rounded-xl shadow-sm aspect-[4/5]">
+                    </div>
+                    <div class="w-full md:w-3/5 flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold mb-1">Nombre del Personaje 2</h3>
+                        <p class="text-sm text-brand-500 uppercase tracking-wide mb-6">Rol o Título (Ej. El Coprotagonista)</p>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-brand-900 border-b border-brand-100 pb-2 mb-3">Apariencia Física</h4>
+                            <p class="text-brand-500 text-sm leading-relaxed">
+                                [Describe aquí su apariencia]. Reemplaza este texto con la altura, peso, rasgos faciales distintivos (cicatrices, lunares, tatuajes), color de ojos y cabello, y el estilo de ropa habitual de tu OC.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-brand-900 border-b border-brand-100 pb-2 mb-3">Personalidad</h4>
+                            <p class="text-brand-500 text-sm leading-relaxed">
+                                [Describe aquí su personalidad]. Reemplaza este texto detallando cómo se comporta con los demás, cuáles son sus virtudes, sus defectos, traumas del pasado o aspiraciones a futuro.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Puedes copiar y pegar el bloque <article> de arriba para agregar más personajes -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Historia y Capítulos Completos -->
+    <section id="historia" class="py-20 bg-brand-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="mb-16 text-center">
+                <h2 class="text-3xl font-bold mb-4">Historia y Capítulos</h2>
+                <p class="text-brand-500">Sumérgete en la narrativa. Aquí puedes leer la historia completa, dividida por capítulos.</p>
+            </div>
+
+            <!-- Contenedor de Capítulos -->
+            <div class="space-y-12">
+                
+                <!-- Capítulo 1 -->
+                <article class="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-brand-100">
+                    <header class="mb-8 text-center">
+                        <span class="text-sm font-semibold text-brand-500 uppercase tracking-widest">Capítulo 1</span>
+                        <h3 class="text-3xl font-bold mt-2 mb-4">El Comienzo de Todo</h3>
+                        <div class="w-12 h-1 bg-brand-900 mx-auto rounded-full"></div>
+                    </header>
+                    <div class="prose prose-slate max-w-none text-brand-900 leading-loose">
+                        <p class="mb-4">
+                            [Comienza a escribir tu historia aquí]. El viento soplaba frío esa noche en la ciudad. Las luces de neón parpadeaban en los charcos formados por la lluvia reciente...
+                        </p>
+                        <p class="mb-4">
+                            Usa estos párrafos para ir desarrollando la trama. El diseño está optimizado para que la lectura sea muy cómoda (mucho espacio en blanco, interlineado amplio y un tamaño de letra adecuado).
+                        </p>
+                        <p>
+                            "Puedes usar comillas para los diálogos", dijo el personaje principal mientras observaba el horizonte. "Se verá muy limpio y profesional."
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Capítulo 2 -->
+                <article class="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-brand-100">
+                    <header class="mb-8 text-center">
+                        <span class="text-sm font-semibold text-brand-500 uppercase tracking-widest">Capítulo 2</span>
+                        <h3 class="text-3xl font-bold mt-2 mb-4">Título del Capítulo Dos</h3>
+                        <div class="w-12 h-1 bg-brand-900 mx-auto rounded-full"></div>
+                    </header>
+                    <div class="prose prose-slate max-w-none text-brand-900 leading-loose">
+                        <p class="mb-4">
+                            [Inserta aquí el texto de tu segundo capítulo]. Puedes hacer esta sección tan larga como necesites, el contenedor crecerá automáticamente para adaptarse a tu texto.
+                        </p>
+                        <p>
+                            Para añadir más capítulos, simplemente copia todo el bloque `<article>` de un capítulo y pégalo justo debajo.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-white py-8 border-t border-brand-100 mt-auto">
+        <div class="max-w-6xl mx-auto px-6 text-center text-sm text-brand-500">
+            <p>&copy; 2026 The Absolute Evil Devil. Todos los derechos reservados.</p>
+            <p class="mt-2">En desarrollo...</p>
+        </div>
+    </footer>
+
+</body>
+</html>
